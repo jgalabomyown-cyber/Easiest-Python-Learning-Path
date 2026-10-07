@@ -1,6 +1,6 @@
 # Python Learning Path 1-6 Quiz
-# Covers: variables, data types, string operations, operators, advanced data types,
-# and type casting.
+# Based directly on the lessons in this project: variables, data types,
+# operators, casting, conditions, and loops.
 
 questions = [
     {
@@ -24,7 +24,7 @@ questions = [
         "answer": "c"
     },
     {
-        "question": "What does 'Alice' + 'Bob' produce?",
+        "question": "What does 'Alice' + 'Bob' evaluate to?",
         "options": [
             "a) Alice Bob",
             "b) AliceBob",
@@ -32,6 +32,16 @@ questions = [
             "d) Error"
         ],
         "answer": "b"
+    },
+    {
+        "question": "Which of these is a dictionary?",
+        "options": [
+            "a) [1, 2, 3]",
+            "b) (1, 2, 3)",
+            "c) {'name': 'John', 'age': 20}",
+            "d) {1, 2, 3}"
+        ],
+        "answer": "c"
     },
     {
         "question": "What is the result of 22 % 8?",
@@ -44,7 +54,7 @@ questions = [
         "answer": "c"
     },
     {
-        "question": "Which operator is used for exponentiation in Python?",
+        "question": "Which operator is used for exponentiation?",
         "options": [
             "a) ^",
             "b) **",
@@ -54,67 +64,7 @@ questions = [
         "answer": "b"
     },
     {
-        "question": "Which of these is a list?",
-        "options": [
-            "a) (1, 2, 3)",
-            "b) [1, 2, 3]",
-            "c) {1, 2, 3}",
-            "d) {'a': 1, 'b': 2}"
-        ],
-        "answer": "b"
-    },
-    {
-        "question": "Which data type stores values as key-value pairs?",
-        "options": [
-            "a) List",
-            "b) Set",
-            "c) Dictionary",
-            "d) Tuple"
-        ],
-        "answer": "c"
-    },
-    {
-        "question": "What is the main difference between a list and a tuple?",
-        "options": [
-            "a) A list is immutable and a tuple is mutable",
-            "b) A list is ordered and mutable, while a tuple is ordered and immutable",
-            "c) A list stores key-value pairs",
-            "d) A tuple cannot store numbers"
-        ],
-        "answer": "b"
-    },
-    {
-        "question": "Which value represents the absence of a value in Python?",
-        "options": [
-            "a) empty string",
-            "b) 0",
-            "c) None",
-            "d) False"
-        ],
-        "answer": "c"
-    },
-    {
-        "question": "What does type(age) return if age = 12?",
-        "options": [
-            "a) <class 'float'>",
-            "b) <class 'str'>",
-            "c) <class 'int'>",
-            "d) <class 'bool'>"
-        ],
-        "answer": "c"
-    },
-    {
-        "question": "Which is an example of explicit type conversion?",
-        "options": [
-            "a) a = 7; b = 2.5; c = a + b",
-            "b) n = float(5)",
-            "c) x = 10",
-            "d) name = 'John'"
-        ],
-        "answer": "b"
-    },
-    {
-        "question": "What is the result of int(5.9)?",
+        "question": "What does int(5.9) return?",
         "options": [
             "a) 5.9",
             "b) 6",
@@ -122,6 +72,86 @@ questions = [
             "d) Error"
         ],
         "answer": "c"
+    },
+    {
+        "question": "Which expression is the correct comparison check?",
+        "options": [
+            "a) age = 12",
+            "b) age == 12",
+            "c) age != 12",
+            "d) age === 12"
+        ],
+        "answer": "b"
+    },
+    {
+        "question": "What is the result of True and False?",
+        "options": [
+            "a) True",
+            "b) False",
+            "c) None",
+            "d) Error"
+        ],
+        "answer": "b"
+    },
+    {
+        "question": "Which value is considered falsy in Python?",
+        "options": [
+            "a) 'hello'",
+            "b) 1",
+            "c) []",
+            "d) '0'"
+        ],
+        "answer": "c"
+    },
+    {
+        "question": "What does break do inside a loop?",
+        "options": [
+            "a) Skips one iteration",
+            "b) Stops the loop immediately",
+            "c) Restarts the loop",
+            "d) Converts the loop to a list"
+        ],
+        "answer": "b"
+    },
+    {
+        "question": "Which loop produces numbers 0, 2, 4, 6, 8?",
+        "options": [
+            "a) range(0, 10, 2)",
+            "b) range(1, 10, 2)",
+            "c) range(0, 9, 2)",
+            "d) range(2, 10, 2)"
+        ],
+        "answer": "a"
+    },
+    {
+        "question": "What is the purpose of continue in a loop?",
+        "options": [
+            "a) Ends the entire program",
+            "b) Jumps to the next iteration",
+            "c) Stores a value in a list",
+            "d) Creates a new function"
+        ],
+        "answer": "b"
+    },
+    {
+        "question": "Which statement is used to import a module?",
+        "options": [
+            "a) include",
+            "b) require",
+            "c) import",
+            "d) load"
+        ],
+        "answer": "c"
+    },
+    {
+        "question": "What does sys.exit() do?",
+        "options": [
+            "a) Pauses the program",
+            "b) Exits the program early",
+            "c) Prints a traceback",
+            "d) Imports a new file"
+        ],
+        "answer": "b"
     }
 ]
 
@@ -155,3 +185,4 @@ def show_answer_key():
 if __name__ == "__main__":
     run_quiz()
     show_answer_key()
+
